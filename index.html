@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="search-box">
+	<h3 id="headline">Which City's Weather You Wanna Know?</h3>
+	<form class="example" action="">
+	  <input type="text" class="mySearch" placeholder="Type City's Name" name="search">
+	  <button onclick="gettingCity()"><i class="fa fa-search"></i></button>
+	</form>
+
+	<p class="city"></p>
+	<p class="description"></p>
+	<p class="temp"></p>
+</div>
+<div id="cointainer">
+
+	<div class="cointainer-one">
+
+		<div class="location">
+			
+			<button id="plus"> + </button>
+			<h1 class="location-timezone">Timezone</h1>
+			<div class="imageIcon"><img src="https://openweathermap.org/img/wn/04n.png" id ="image" alt=""class="icon" /></div>
+		</div>
+
+		<div class="temperature-details">
+			<div class="degree-section">
+				<div class="spanDiv"><h3 class="degree-value">Temperature:</h3><span>K</span></div>
+				<div class="spanDiv"><h3 class="degree-max-value">Max Temperature Today:</h3><span>K</span></div>
+				<div class="spanDiv"><h3 class="degree-min-value">Min Temperature Today:</h3><span>K</span></div>
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+
+<p id="copyright">&copy;Taufique Azad</p>
+
+<!-- <script type="text/javascript" src="weather.js"></script> -->
+<script type="text/javascript" src="cityWeather.js" defer></script>
+</body>
+</html>
